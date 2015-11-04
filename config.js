@@ -4,7 +4,7 @@ module.exports = {
     dest: './build/js',  },
 
   webpack: {
-    entry: './src/js/app.es6',
+    entry: './src/js/app.js',
     output: {
       filename: 'bundle.js'
     },
@@ -17,7 +17,7 @@ module.exports = {
 
     module: {
       loaders: [
-        { test: /\.es6$/, loader: 'babel-loader' }
+        { test: /\.js$/, loader: 'babel-loader' }
       ]
     }
   }
